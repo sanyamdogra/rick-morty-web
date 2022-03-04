@@ -1,0 +1,15 @@
+.rick-morty-heading {
+  color: white;
+  font-weight: 700;
+  font-size: 70px;
+  background: linear-gradient(to right, #c6de41 30%, rgb(97, 218, 251) 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  &__secondary {
+    font-size: 20px;
+    font-weight: 400;
+  }
+}

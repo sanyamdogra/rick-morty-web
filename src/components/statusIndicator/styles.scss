@@ -1,0 +1,31 @@
+.rick-morty-status-indicator {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #f5222d;
+  margin-right: 0.5rem;
+
+  &--alive {
+    background-color: #52c41a;
+    animation: twinkle normal 1s infinite ease-in-out;
+  }
+
+  &--dead {
+    background-color: #f5222d;
+  }
+
+  &--unknown {
+    background-color: #f9a608;
+  }
+}
+
+@keyframes twinkle {
+  from,
+  to {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

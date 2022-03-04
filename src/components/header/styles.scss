@@ -1,0 +1,16 @@
+@import "../../styles/variables/miscs";
+
+.rick-morty-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $header-height;
+  background-color: black;
+  padding: 1rem 5rem;
+  color: white;
+
+  img {
+    width: auto;
+    height: 60px;
+  }
+}

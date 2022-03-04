@@ -1,9 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import Listing from "..";
+import App from "..";
 
 test("renders rick and morty heading", () => {
-  render(<Listing />);
-  const heading = screen.getByText(/Rick and morty/i);
+  render(<App />);
+  const heading = screen.getByText(/The Rick and Morty/i);
   expect(heading).toBeInTheDocument();
 });

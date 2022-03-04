@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles.scss";
-import Listing from "./containers/listing";
+import App from "./containers/app";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Listing />
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
