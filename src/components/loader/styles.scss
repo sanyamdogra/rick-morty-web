@@ -1,0 +1,5 @@
+@import "../../styles/extends/gradients";
+
+.rick-morty-loader {
+  @extend %text-gradient;
+}

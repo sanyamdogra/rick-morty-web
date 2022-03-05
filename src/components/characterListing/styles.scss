@@ -1,5 +1,3 @@
-@import "../../styles/extends/gradients";
-
 .rick-morty-character-listing {
   display: flex;
   flex-direction: row;
@@ -8,8 +6,4 @@
   justify-content: center;
   width: 100%;
   min-height: 600px;
-
-  &__loader {
-    @extend %text-gradient;
-  }
 }

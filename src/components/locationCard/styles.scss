@@ -6,10 +6,16 @@
   flex-direction: column;
   text-align: left;
   padding: $space-normal;
+  min-height: 200px;
 
   &__heading {
     width: 100%;
     font-size: $font-ml;
     font-weight: $bold;
+  }
+
+  &__loader-wrapper {
+    align-self: center;
+    margin-top: $space-xl;
   }
 }

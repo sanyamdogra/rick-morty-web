@@ -6,6 +6,7 @@
   flex-direction: column;
   text-align: left;
   padding: $space-normal;
+  min-height: 200px;
 
   &__heading {
     width: 100%;
@@ -20,5 +21,10 @@
     max-height: 300px;
     overflow-y: auto;
     padding-left: $space-normal;
+  }
+
+  &__loader-wrapper {
+    align-self: center;
+    margin-top: $space-xl;
   }
 }

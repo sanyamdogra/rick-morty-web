@@ -8,13 +8,14 @@ interface Props {
 
 const rootClassName = "rick-morty-status-indicator";
 
-const StatusIndicator = (props: Props) => {
-  const iconStatus = props.status.toLocaleLowerCase();
+const StatusIndicator: React.FC<Props> = ({ status }) => {
+  const iconStatus = status.toLocaleLowerCase();
 
   return (
     <div
       className={`${rootClassName} ${rootClassName}--${iconStatus}`}
-      title={props.status}
+      title={status}
+      data-testid="status-indicator"
     />
   );
 };

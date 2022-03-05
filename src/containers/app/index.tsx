@@ -34,7 +34,10 @@ const App: React.FC = () => {
   return (
     <div className={rootClassName}>
       <Header />
-      <Listing characterList={characterList} isLoading={isLoading} />
+      <Listing
+        characterList={characterList?.results ?? null}
+        isLoading={isLoading}
+      />
       {!isLoading && (
         <Pagination
           page={pageNumber}

@@ -14,11 +14,14 @@ const rootClassName = "rick-morty-card-field";
 const CardField: React.FC<Props> = (props: Props) => {
   return (
     <>
-      <div className={`${rootClassName}__label`}>{props.label}</div>
+      <div className={`${rootClassName}__label`} data-testid="card-field-label">
+        {props.label}
+      </div>
       <div
         className={`${rootClassName}__value`}
         onClick={props.onClick}
         title={props.title}
+        data-testid="card-field-value"
       >
         {props.value}
       </div>

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot and render correct data 1`] = `
+<DocumentFragment>
+  <h1
+    class="rick-morty-heading"
+    data-testid="heading-primary"
+  >
+    test-primary
+    <span
+      class="rick-morty-heading__secondary"
+      data-testid="heading-secondary"
+    >
+      test-secondary
+    </span>
+  </h1>
+</DocumentFragment>
+`;

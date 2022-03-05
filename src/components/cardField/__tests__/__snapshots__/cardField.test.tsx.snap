@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot and render correct data 1`] = `
+<DocumentFragment>
+  <div
+    class="rick-morty-card-field__label"
+    data-testid="card-field-label"
+  >
+    test-label
+  </div>
+  <div
+    class="rick-morty-card-field__value"
+    data-testid="card-field-value"
+  >
+    test-value
+  </div>
+</DocumentFragment>
+`;

@@ -1,6 +1,7 @@
 import React from "react";
 import { Episode } from "../../models/common/types";
 import CardField from "../cardField";
+import Loader from "../loader";
 
 import "./styles.scss";
 
@@ -23,7 +24,11 @@ const EpisodeCard = (props: Props) => {
   return (
     <div className={rootClassName}>
       <div className={`${rootClassName}__heading`}>Chapter list</div>
-      {props.loading && <>Fetching episode info ...</>}
+      {props.loading && (
+        <div className={`${rootClassName}__loader-wrapper`}>
+          <Loader>Fetching chapter info ...</Loader>
+        </div>
+      )}
       {!props.loading && (
         <>
           <CardField

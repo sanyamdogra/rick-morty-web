@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot and render correct data 1`] = `
+<DocumentFragment>
+  <div
+    class="rick-morty-loc-card"
+  >
+    <div
+      class="rick-morty-loc-card__heading"
+      data-testid="location-card-heading"
+    >
+      Test Location Name
+    </div>
+    <div
+      class="rick-morty-card-field__label"
+      data-testid="card-field-label"
+    >
+      Dimension
+    </div>
+    <div
+      class="rick-morty-card-field__value"
+      data-testid="card-field-value"
+    >
+      Test Location Dimension
+    </div>
+    <div
+      class="rick-morty-card-field__label"
+      data-testid="card-field-label"
+    >
+      No of residents
+    </div>
+    <div
+      class="rick-morty-card-field__value"
+      data-testid="card-field-value"
+    >
+      7
+    </div>
+    <div
+      class="rick-morty-card-field__label"
+      data-testid="card-field-label"
+    >
+      Type
+    </div>
+    <div
+      class="rick-morty-card-field__value"
+      data-testid="card-field-value"
+    >
+      Test Location Type
+    </div>
+  </div>
+</DocumentFragment>
+`;

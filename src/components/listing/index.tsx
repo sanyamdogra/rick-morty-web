@@ -1,14 +1,14 @@
 import React from "react";
 
 import CharacterListing from "../../components/characterListing";
-import { CharacterResponse } from "../../services/types";
+import { Character } from "../../models/common/types";
 
 import "./styles.scss";
 
 const rootClassName = "rick-morty-listing";
 
 interface Props {
-  characterList: CharacterResponse | null;
+  characterList: Character[] | null;
   isLoading: boolean;
 }
 

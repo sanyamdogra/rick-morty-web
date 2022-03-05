@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot and render correct data 1`] = `
+<DocumentFragment>
+  <div
+    class="rick-morty-status-indicator rick-morty-status-indicator--alive"
+    data-testid="status-indicator"
+    title="Alive"
+  />
+</DocumentFragment>
+`;

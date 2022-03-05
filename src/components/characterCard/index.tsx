@@ -38,13 +38,24 @@ const CharacterCard = (props: Props) => {
         />
       )}
       <div className={`${rootClassName}__image-wrapper`}>
-        <img src={props.character.image} alt={props.character.name} />
+        <img
+          src={props.character.image}
+          alt={props.character.name}
+          data-testid="character-card-image"
+        />
       </div>
       <div className={`${rootClassName}__details`}>
-        <div className={`${rootClassName}__name`} title={props.character.name}>
+        <div
+          className={`${rootClassName}__name`}
+          title={props.character.name}
+          data-testid="character-card-name"
+        >
           {props.character.name}
         </div>
-        <div className={`${rootClassName}__value`}>
+        <div
+          className={`${rootClassName}__value`}
+          data-testid="character-card-species"
+        >
           <StatusIndicator status={props.character.status} />
           {props.character.species}
         </div>

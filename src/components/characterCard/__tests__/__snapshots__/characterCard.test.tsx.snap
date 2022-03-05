@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot and render correct data 1`] = `
+<DocumentFragment>
+  <div
+    class="rick-morty-character-card"
+  >
+    <div
+      class="rick-morty-character-card__image-wrapper"
+    >
+      <img
+        alt="Rick Sanchez"
+        data-testid="character-card-image"
+        src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
+      />
+    </div>
+    <div
+      class="rick-morty-character-card__details"
+    >
+      <div
+        class="rick-morty-character-card__name"
+        data-testid="character-card-name"
+        title="Rick Sanchez"
+      >
+        Rick Sanchez
+      </div>
+      <div
+        class="rick-morty-character-card__value"
+        data-testid="character-card-species"
+      >
+        <div
+          class="rick-morty-status-indicator rick-morty-status-indicator--alive"
+          data-testid="status-indicator"
+          title="Alive"
+        />
+        Human
+      </div>
+      <div
+        class="rick-morty-card-field__label"
+        data-testid="card-field-label"
+      >
+        Origin
+      </div>
+      <div
+        class="rick-morty-card-field__value"
+        data-testid="card-field-value"
+      >
+        Earth (C-137)
+      </div>
+      <div
+        class="rick-morty-card-field__label"
+        data-testid="card-field-label"
+      >
+        Last location
+      </div>
+      <div
+        class="rick-morty-card-field__value"
+        data-testid="card-field-value"
+        title="Click for more info on location"
+      >
+        Citadel of Ricks
+      </div>
+      <div
+        class="rick-morty-card-field__label"
+        data-testid="card-field-label"
+      >
+        Appears on
+      </div>
+      <div
+        class="rick-morty-card-field__value"
+        data-testid="card-field-value"
+        title="Click for more info on episodes"
+      >
+        2 chapters
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
