@@ -1,21 +1,24 @@
+@import "../../styles/variables/fonts";
+@import "../../styles/variables/spacing";
+
 .rick-morty-ep-card {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 1rem;
+  padding: $space-normal;
 
   &__heading {
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: $font-xl;
+    font-weight: $semibold;
   }
 
   &__ep-list {
     max-height: 300px;
     overflow-y: auto;
-    padding-left: 1rem;
+    padding-left: $space-normal;
   }
 }

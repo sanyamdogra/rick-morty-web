@@ -1,16 +1,20 @@
+@import "../../styles/variables/fonts";
+@import "../../styles/variables/spacing";
+@import "../../styles/variables/colors";
+
 .rick-morty-card-field {
   &__label {
-    margin-top: 1rem;
-    font-size: 14px;
+    margin-top: $space-normal;
+    font-size: $font-sm;
   }
 
   &__value {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: $font-normal;
+    font-weight: $bold;
 
     &:hover {
       cursor: pointer;
-      color: rgb(97, 218, 251);
+      color: $secondary-accent;
     }
   }
 }

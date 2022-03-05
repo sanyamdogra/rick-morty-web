@@ -1,0 +1,13 @@
+@import "../variables/colors";
+
+%text-gradient {
+  background: linear-gradient(
+    to right,
+    $primary-accent 30%,
+    $secondary-accent 70%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

@@ -1,3 +1,5 @@
+@import "../../styles/extends/gradients";
+
 .rick-morty-character-listing {
   display: flex;
   flex-direction: row;
@@ -8,10 +10,6 @@
   min-height: 600px;
 
   &__loader {
-    background: linear-gradient(to right, #c6de41 30%, rgb(97, 218, 251) 70%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+    @extend %text-gradient;
   }
 }

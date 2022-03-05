@@ -1,4 +1,6 @@
 @import "../../styles/variables/miscs";
+@import "../../styles/variables/spacing";
+@import "../../styles/variables/fonts";
 
 .rick-morty-header {
   display: flex;
@@ -6,13 +8,13 @@
   justify-content: space-between;
   height: $header-height;
   background-color: black;
-  padding: 1rem;
+  padding: $space-normal;
   color: white;
   width: 80%;
 
   img {
     width: auto;
-    height: 60px;
+    height: 50px;
   }
 
   &__source-code {
@@ -28,7 +30,7 @@
   }
 
   &__icon {
-    font-size: 28px;
-    margin-left: 0.5rem;
+    font-size: $font-ml;
+    margin-left: $space-xs;
   }
 }

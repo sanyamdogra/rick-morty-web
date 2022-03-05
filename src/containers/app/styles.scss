@@ -1,12 +1,17 @@
+@import "../../styles/variables/fonts";
+@import "../../styles/variables/colors";
+@import "../../styles/variables/spacing";
+
 .rick-morty-app {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-family: $font-family;
 
   &__pagination {
-    margin: 1rem 0;
+    margin: $space-normal 0;
 
     button {
       color: white;
@@ -17,7 +22,7 @@
     }
 
     .MuiPaginationItem-circular.Mui-selected {
-      color: #c6de41;
+      color: $primary-accent;
     }
   }
 }

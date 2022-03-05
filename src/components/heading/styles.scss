@@ -1,23 +1,22 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/fonts";
+@import "../../styles/extends/gradients";
+
 .rick-morty-heading {
-  color: white;
   font-weight: 700;
   font-size: 70px;
-  background: linear-gradient(to right, #c6de41 30%, rgb(97, 218, 251) 70%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  @extend %text-gradient;
 
   @media screen and (max-width: 600px) {
-    font-size: 40px;
+    font-size: $font-ml;
   }
 
   &__secondary {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: $font-l;
+    font-weight: $regular;
 
     @media screen and (max-width: 600px) {
-      font-size: 18px;
+      font-size: $font-xs;
     }
   }
 }
