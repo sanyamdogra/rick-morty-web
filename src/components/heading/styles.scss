@@ -7,15 +7,15 @@
   font-size: 70px;
   @extend %text-gradient;
 
-  @media screen and (max-width: 600px) {
-    font-size: $font-ml;
-  }
-
   &__secondary {
     font-size: $font-l;
     font-weight: $regular;
+  }
 
-    @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
+    font-size: $font-xl;
+
+    &__secondary {
       font-size: $font-xs;
     }
   }

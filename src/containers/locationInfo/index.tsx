@@ -1,9 +1,11 @@
 import React, { MouseEventHandler, useEffect, useState } from "react";
+
+import { getLocationInfo } from "../../services/";
+import { LocationResponse } from "../../services/types";
+
 import LocationCard from "../../components/locationCard";
 import Modal from "../../components/modal";
 import { Character } from "../../models/common/types";
-import { getLocationInfo } from "../../services/";
-import { LocationResponse } from "../../services/types";
 
 interface Props {
   show: boolean;

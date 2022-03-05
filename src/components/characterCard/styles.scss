@@ -4,22 +4,17 @@
 @import "../../styles/variables/borders";
 
 .rick-morty-character-card {
-  width: 500px;
-  min-height: 220px;
-  border-radius: $border-radius-normal;
-  margin: $space-m;
   display: flex;
   flex-direction: row;
+  width: 500px;
+  min-height: 220px;
+  margin: $space-m;
   color: white;
   border: $border-width-normal solid $secondary-accent;
-
-  @media screen and (max-width: 600px) {
-    flex-direction: column;
-    width: auto;
-  }
+  border-radius: $border-radius-normal;
 
   &__image-wrapper {
-    flex: 2 1 0%;
+    width: 80%;
 
     img {
       opacity: 1;
@@ -30,27 +25,23 @@
       height: 100%;
       object-position: center center;
       object-fit: cover;
-
-      @media screen and (max-width: 600px) {
-        height: 300px;
-      }
     }
   }
 
   &__details {
-    flex: 3 1 0%;
     width: 100%;
     padding: $space-normal;
     text-align: left;
-
-    @media screen and (max-width: 600px) {
-      width: auto;
-    }
   }
 
   &__name {
     font-size: 20px;
     font-weight: $bold;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 300px;
   }
 
   &__label {
@@ -63,5 +54,26 @@
     flex-direction: row;
     align-items: center;
     margin-top: $space-xs;
+  }
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    width: auto;
+
+    &__image-wrapper {
+      min-height: 300px;
+      min-width: 300px;
+      width: 100%;
+
+      img {
+        border-top-left-radius: $border-radius-normal;
+        border-top-right-radius: $border-radius-normal;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    &__details {
+      width: auto;
+    }
   }
 }

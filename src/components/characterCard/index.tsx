@@ -41,7 +41,9 @@ const CharacterCard = (props: Props) => {
         <img src={props.character.image} alt={props.character.name} />
       </div>
       <div className={`${rootClassName}__details`}>
-        <div className={`${rootClassName}__name`}>{props.character.name}</div>
+        <div className={`${rootClassName}__name`} title={props.character.name}>
+          {props.character.name}
+        </div>
         <div className={`${rootClassName}__value`}>
           <StatusIndicator status={props.character.status} />
           {props.character.species}

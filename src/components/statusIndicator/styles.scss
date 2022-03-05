@@ -1,23 +1,25 @@
 @import "../../styles/variables/colors";
+@import "../../styles/variables/spacing";
+@import "../../styles/variables/miscs";
 
 .rick-morty-status-indicator {
-  height: 16px;
-  width: 16px;
+  height: $status-indicator-dimension;
+  width: $status-indicator-dimension;
   border-radius: 50%;
-  background-color: #f5222d;
-  margin-right: 0.5rem;
+  background-color: $status-color-red;
+  margin-right: $space-xs;
 
   &--alive {
-    background-color: #52c41a;
+    background-color: $status-color-green;
     animation: twinkle normal 1s infinite ease-in-out;
   }
 
   &--dead {
-    background-color: #f5222d;
+    background-color: $status-color-red;
   }
 
   &--unknown {
-    background-color: #f9a608;
+    background-color: $status-color-amber;
   }
 }
 

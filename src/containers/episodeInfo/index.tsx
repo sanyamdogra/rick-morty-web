@@ -1,9 +1,10 @@
 import React, { MouseEventHandler, useEffect, useState } from "react";
-import EpisodeCard from "../../components/episodeCard";
 
-import Modal from "../../components/modal";
 import { getEpisodesInfo } from "../../services";
 import { EpisodeResponse } from "../../services/types";
+
+import EpisodeCard from "../../components/episodeCard";
+import Modal from "../../components/modal";
 
 interface Props {
   show: boolean;

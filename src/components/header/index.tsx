@@ -12,7 +12,7 @@ const Header: React.FC = () => {
   return (
     <>
       <header className={rootClassName}>
-        <img src={require("../../icons/logo2.png")} alt="Rick and Morty" />
+        <img src={require("../../icons/logo.png")} alt="Rick and Morty" />
         <a
           href={GITHUB_PROJECT_REPO}
           className={`${rootClassName}__source-code`}
