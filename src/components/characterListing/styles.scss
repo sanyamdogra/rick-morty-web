@@ -5,4 +5,13 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  min-height: 600px;
+
+  &__loader {
+    background: linear-gradient(to right, #c6de41 30%, rgb(97, 218, 251) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
 }

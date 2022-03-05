@@ -1,0 +1,21 @@
+.rick-morty-ep-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+
+  &__heading {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__ep-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-left: 1rem;
+  }
+}

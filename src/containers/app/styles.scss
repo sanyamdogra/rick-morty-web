@@ -1,4 +1,23 @@
 .rick-morty-app {
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+
+  &__pagination {
+    margin: 1rem 0;
+
+    button {
+      color: white;
+    }
+
+    .MuiPaginationItem-ellipsis {
+      color: white;
+    }
+
+    .MuiPaginationItem-circular.Mui-selected {
+      color: #c6de41;
+    }
+  }
 }

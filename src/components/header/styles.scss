@@ -6,11 +6,29 @@
   justify-content: space-between;
   height: $header-height;
   background-color: black;
-  padding: 1rem 5rem;
+  padding: 1rem;
   color: white;
+  width: 80%;
 
   img {
     width: auto;
     height: 60px;
+  }
+
+  &__source-code {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    font-size: 28px;
+    margin-left: 0.5rem;
   }
 }

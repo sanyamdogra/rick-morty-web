@@ -2,9 +2,9 @@ import React from "react";
 
 import "./styles.scss";
 
-type Props = {
+interface Props {
   status: string;
-};
+}
 
 const rootClassName = "rick-morty-status-indicator";
 

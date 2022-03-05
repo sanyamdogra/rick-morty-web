@@ -14,10 +14,13 @@ type Props = {
 const CharacterListing = (props: Props) => {
   return (
     <div className={rootClassName}>
-      {props.characterList?.results?.map((character, idx) => (
-        <CharacterCard character={character} key={idx} />
-      ))}
-      {props.isLoading && <>Loading....</>}
+      {!props.isLoading &&
+        props.characterList?.results?.map((character, idx) => (
+          <CharacterCard character={character} key={idx} />
+        ))}
+      {props.isLoading && (
+        <div className={`${rootClassName}__loader`}>Loading Characters ...</div>
+      )}
     </div>
   );
 };

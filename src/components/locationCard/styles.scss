@@ -1,0 +1,15 @@
+.rick-morty-loc-card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+
+  &__heading {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+  }
+}

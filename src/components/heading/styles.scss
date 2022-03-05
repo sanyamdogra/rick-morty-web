@@ -8,8 +8,16 @@
   -webkit-background-clip: text;
   color: transparent;
 
+  @media screen and (max-width: 600px) {
+    font-size: 40px;
+  }
+
   &__secondary {
     font-size: 20px;
     font-weight: 400;
+
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+    }
   }
 }

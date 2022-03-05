@@ -1,0 +1,16 @@
+.rick-morty-card-field {
+  &__label {
+    margin-top: 1rem;
+    font-size: 14px;
+  }
+
+  &__value {
+    font-size: 16px;
+    font-weight: 700;
+
+    &:hover {
+      cursor: pointer;
+      color: rgb(97, 218, 251);
+    }
+  }
+}
