@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match the snapshot and render correct data 1`] = `
+<DocumentFragment>
+  <div
+    class="rick-morty-ep-card"
+  >
+    <div
+      class="rick-morty-ep-card__heading"
+    >
+      Chapter list
+    </div>
+    <div
+      class="rick-morty-card-field__label"
+      data-testid="card-field-label"
+    >
+      Appears on
+    </div>
+    <div
+      class="rick-morty-card-field__value rick-morty-card-field__value--none"
+      data-testid="card-field-value"
+    >
+      2 chapters
+    </div>
+    <ul
+      class="rick-morty-ep-card__ep-list"
+      data-testid="episode-list"
+    >
+      <li
+        data-testid="episode-name"
+      >
+        Pilot
+      </li>
+      <li
+        data-testid="episode-name"
+      >
+        Pilot
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

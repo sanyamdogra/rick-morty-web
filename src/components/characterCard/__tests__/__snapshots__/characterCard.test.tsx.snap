@@ -42,7 +42,7 @@ exports[`should match the snapshot and render correct data 1`] = `
         Origin
       </div>
       <div
-        class="rick-morty-card-field__value"
+        class="rick-morty-card-field__value rick-morty-card-field__value--none"
         data-testid="card-field-value"
       >
         Earth (C-137)
@@ -54,7 +54,7 @@ exports[`should match the snapshot and render correct data 1`] = `
         Last location
       </div>
       <div
-        class="rick-morty-card-field__value"
+        class="rick-morty-card-field__value rick-morty-card-field__value--invert"
         data-testid="card-field-value"
         title="Click for more info on location"
       >
@@ -67,7 +67,7 @@ exports[`should match the snapshot and render correct data 1`] = `
         Appears on
       </div>
       <div
-        class="rick-morty-card-field__value"
+        class="rick-morty-card-field__value rick-morty-card-field__value--invert"
         data-testid="card-field-value"
         title="Click for more info on episodes"
       >

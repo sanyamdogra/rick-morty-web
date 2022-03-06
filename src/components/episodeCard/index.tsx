@@ -7,7 +7,7 @@ import "./styles.scss";
 
 interface Props {
   loading: boolean;
-  episodeInfo: Episode[] | null;
+  episodeInfo: Episode[] | Episode | null;
 }
 
 const rootClassName = "rick-morty-ep-card";
@@ -25,7 +25,10 @@ const EpisodeCard = (props: Props) => {
     <div className={rootClassName}>
       <div className={`${rootClassName}__heading`}>Chapter list</div>
       {props.loading && (
-        <div className={`${rootClassName}__loader-wrapper`}>
+        <div
+          className={`${rootClassName}__loader-wrapper`}
+          data-testid="episode-card-loader"
+        >
           <Loader>Fetching chapter info ...</Loader>
         </div>
       )}
@@ -35,9 +38,14 @@ const EpisodeCard = (props: Props) => {
             label="Appears on"
             value={`${episodeArray?.length} chapters`}
           />
-          <ul className={`${rootClassName}__ep-list`}>
+          <ul
+            className={`${rootClassName}__ep-list`}
+            data-testid="episode-list"
+          >
             {episodeArray?.map((ep, idx) => (
-              <li key={idx}>{ep?.name}</li>
+              <li key={idx} data-testid="episode-name">
+                {ep?.name}
+              </li>
             ))}
           </ul>
         </>

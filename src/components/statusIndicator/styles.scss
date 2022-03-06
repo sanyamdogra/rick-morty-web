@@ -7,7 +7,7 @@
   width: $status-indicator-dimension;
   border-radius: 50%;
   background-color: $status-color-red;
-  margin-right: $space-xs;
+  margin-right: $space-small;
 
   &--alive {
     background-color: $status-color-green;

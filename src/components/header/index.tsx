@@ -27,7 +27,7 @@ const Header: React.FC = () => {
           </span>
         </a>
       </header>
-      <Heading primary="The Rick and Morty" secondary="characters" />
+      <Heading primary="Rick and Morty" secondary="characters" />
     </>
   );
 };

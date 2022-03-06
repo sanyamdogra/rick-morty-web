@@ -18,13 +18,18 @@ const Modal: React.FC<Props> = ({ handleClose, show, children }) => {
     <div
       className={`${rootClassName} ${rootClassName}--${showHideClassName}`}
       onClick={handleClose}
+      data-testid={"modal-body"}
     >
       <section
         className={`${rootClassName}__main`}
         onClick={(e) => e.stopPropagation()}
       >
         {children}
-        <FaTimes onClick={handleClose} className={`${rootClassName}__close`} />
+        <FaTimes
+          onClick={handleClose}
+          className={`${rootClassName}__close`}
+          data-testid={"modal-close-btn"}
+        />
       </section>
     </div>
   );

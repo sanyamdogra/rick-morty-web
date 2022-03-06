@@ -4,8 +4,16 @@ import "./styles.scss";
 
 const rootClassName = "rick-morty-loader";
 
-const Loader: React.FC = ({ children }) => {
-  return <div className={rootClassName}>{children}</div>;
+interface Props {
+  testId?: string;
+}
+
+const Loader: React.FC<Props> = ({ children, testId }) => {
+  return (
+    <div className={rootClassName} data-testid={testId}>
+      {children}
+    </div>
+  );
 };
 
 export default Loader;

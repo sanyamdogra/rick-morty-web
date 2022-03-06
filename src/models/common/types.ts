@@ -1,3 +1,5 @@
+import { CharacterResponse, LocationResponse } from "../../services/types";
+
 export interface NameLoc {
   name: string;
   url: string;
@@ -27,3 +29,9 @@ export interface Episode {
   name: string;
   url: string;
 }
+
+export type MockData =
+  | Character
+  | CharacterResponse
+  | Episode
+  | LocationResponse;

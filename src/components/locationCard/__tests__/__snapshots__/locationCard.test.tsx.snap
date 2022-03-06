@@ -18,7 +18,7 @@ exports[`should match the snapshot and render correct data 1`] = `
       Dimension
     </div>
     <div
-      class="rick-morty-card-field__value"
+      class="rick-morty-card-field__value rick-morty-card-field__value--none"
       data-testid="card-field-value"
     >
       Test Location Dimension
@@ -30,7 +30,7 @@ exports[`should match the snapshot and render correct data 1`] = `
       No of residents
     </div>
     <div
-      class="rick-morty-card-field__value"
+      class="rick-morty-card-field__value rick-morty-card-field__value--none"
       data-testid="card-field-value"
     >
       7
@@ -42,7 +42,7 @@ exports[`should match the snapshot and render correct data 1`] = `
       Type
     </div>
     <div
-      class="rick-morty-card-field__value"
+      class="rick-morty-card-field__value rick-morty-card-field__value--none"
       data-testid="card-field-value"
     >
       Test Location Type

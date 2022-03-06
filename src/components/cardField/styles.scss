@@ -12,9 +12,14 @@
     font-size: $font-normal;
     font-weight: $bold;
 
-    &:hover {
+    &--invert:hover {
       cursor: pointer;
       color: $secondary-accent;
+    }
+
+    &--none:hover {
+      cursor: unset;
+      color: white;
     }
   }
 }

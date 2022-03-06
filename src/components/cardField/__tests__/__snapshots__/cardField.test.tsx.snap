@@ -9,7 +9,7 @@ exports[`should match the snapshot and render correct data 1`] = `
     test-label
   </div>
   <div
-    class="rick-morty-card-field__value"
+    class="rick-morty-card-field__value rick-morty-card-field__value--none"
     data-testid="card-field-value"
   >
     test-value

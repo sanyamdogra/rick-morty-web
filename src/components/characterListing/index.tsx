@@ -20,7 +20,9 @@ const CharacterListing = (props: Props) => {
         props.characterList?.map((character, idx) => (
           <CharacterCard character={character} key={idx} />
         ))}
-      {props.isLoading && <Loader>Loading Characters ...</Loader>}
+      {props.isLoading && (
+        <Loader testId="character-list-loader">Loading Characters ...</Loader>
+      )}
     </div>
   );
 };
