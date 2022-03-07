@@ -20,4 +20,6 @@ test("should match the snapshot and render correct data", () => {
   rerender(<CharacterListing characterList={dummyCharArr} isLoading={false} />);
 
   expect(asFragment()).toMatchSnapshot();
+
+  expect(screen.queryByTestId("character-list-loader")).toBeNull();
 });

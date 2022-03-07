@@ -23,7 +23,7 @@ The project has been deployed on Netlify.
 - The home page shows the list of character cards.
 - Each character card has 2 clickable fields:
 
-  - Last Location - Opens the Modal with info about location
+  - Last Location - Opens a modal with info about location
   - Appears on - Opens a modal to display the list of chapters the character appeared on.
 
 ## API - Rickandmortyapi.com

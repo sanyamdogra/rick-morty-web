@@ -20,7 +20,7 @@ test("clicking on cross calls the handleClose", () => {
   expect(handleClose).toHaveBeenCalledTimes(1);
 });
 
-test("setting the show to false", () => {
+test("setting the show to false should add --none class", () => {
   const handleClose = jest.fn();
 
   render(

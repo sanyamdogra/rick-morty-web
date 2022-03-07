@@ -27,7 +27,7 @@ test("should match the snapshot and render correct data", () => {
   expect(image).toHaveAttribute("alt", "Rick Sanchez");
 });
 
-test("clicking on the last location should open episode modal", () => {
+test("clicking on the last location should open/close episode modal", () => {
   render(<CharacterCard character={DUMMY_CHARACTER} />);
 
   fireEvent.click(screen.getByText("Citadel of Ricks"));
@@ -39,7 +39,7 @@ test("clicking on the last location should open episode modal", () => {
   expect(screen.queryByTestId("modal-body")).toBeNull();
 });
 
-test("clicking on the appears on should open location modal", () => {
+test("clicking on the appears on should open/close location modal", () => {
   render(<CharacterCard character={DUMMY_CHARACTER} />);
 
   fireEvent.click(screen.getByText("2 chapters"));

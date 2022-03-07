@@ -14,7 +14,7 @@ import { mockFetchResponse } from "../../../common/utils";
 
 afterEach(cleanup);
 
-test("loads stuff", async () => {
+test("renders the correct location info", async () => {
   const handleClose = jest.fn();
 
   mockFetchResponse(DUMMY_LOCATION);

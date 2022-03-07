@@ -12,7 +12,7 @@ test("renders rick and morty heading", () => {
   expect(heading).toBeInTheDocument();
 });
 
-test("renders the correct episode response info", async () => {
+test("renders the correct characters response info", async () => {
   mockFetchResponse(DUMMY_CHARACTER_RESPONSE);
 
   render(<App />);
