@@ -34,7 +34,7 @@ The Rick and Morty API is a REST(ish) and GraphQL API based on the television sh
 - `/episode`
 - `/location`
 
-These also support query params, visit the api docs for more info.
+These also support query params, visit the [api docs](https://rickandmortyapi.com/documentation/#rest) for more info.
 
 ## Setup steps
 
